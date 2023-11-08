@@ -14,8 +14,8 @@ services:
       restart_policy:
         condition: none #reinicar el contenedor si falla
     ports:
-    - "28017" # mapeo el Puerto del contenedor (derecha) con el puerto del host del servicio
-    - "27017"
+      - "28017" # mapeo el Puerto del contenedor (derecha) con el puerto del host del servicio
+      - "27017"
     volumes:
       - "db-data:/var/logs" # para dar persistencia a la sesión
   order:
