@@ -1,7 +1,5 @@
 FROM tomcat:7-jre8
 
-LABEL maintainer="manuelbrazalezc@gmail.com"
-
 COPY drop/* /usr/local/tomcat/webapps/
 
 EXPOSE 8082
